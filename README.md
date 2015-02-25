@@ -1,8 +1,8 @@
 # Parse.com deployer plugin for [Hexo](http://hexo.io/)
 
-**WARNING**: This plugin is only half-baked and setup for my personal use. If there is interest from others, I'm happy to complete things for others to make use of.
-
 With this plugin you can deploy your Hexo site be hosted on Parse.com, execute smoketests on your pages/blogposts, increment the values of "settings" objects stored on Parse, and easily extend your build/deployment/rollback process.
+
+**WARNING**: This plugin is only half-baked in many ways. If others show interest, I will contribute more features and fix any issues.
 
 ## Usage
 
@@ -21,32 +21,6 @@ plugins:
 - hexo-deployer-parse
 ```
 
-### Disable
-
-Remove `hexo-deployer-parse` from `plugins` in `_config.yml`.
-
-``` yaml
-plugins:
-- hexo-deployer-parse
-```
-
-### Update
-
-Execute the following command.
-
-```
-npm update
-```
-
-### Uninstall
-
-Execute the following npm command. (Don't forget to disable the plugin by removing it from your `_config.yml` file's plugin list in addition to uninstalling the npm package, otherwise Hexo will yell at you...)
-
-```
-npm uninstall hexo-deployer-parse
-```
-
-
 ## Configuration
 
 This explains how to configure your deployment options.
@@ -63,12 +37,14 @@ deploy:
   load_in_browser: true  
 ```
 
-This configuration would ensure that:
+The configuration above would ensure that:
 - The `assets/img` folder will be copied over to `public/img` before your deployment to Parse.com begins.
 - The deployment will throw an error and exit if it does not **complete** in less than 60 seconds. This timeout should include time for generating a build, deploying that build to parse, running all URL tests, and the entire deployment process.
 - After deployment completes your site will be loaded in a new window by your default web browser because `load_in_browser` is set to `true`.
 
 ### Parse Settings
+
+**NOTE: This feature hasn't been completed as of 2/25/15. The local `settings.json` file *will* be updated when you deploy, but your settings object on Parse.com will not be updated. I'll get to this feature soon and update the package when I do.**
 
 If you'd like to have the deployer increment settings values locally and on Parse.com as part of your deployment process, the plugin will need access to your Parse.com App's `Application ID` and `JavaScript Key`. 
 
@@ -140,6 +116,33 @@ This can be `true`, `false`, or a URL like `http://your-app-name.parseapp.com`. 
 ### Deployment Timeout
 
 This is the amount of time, in seconds, that the deployer will wait for the deployment to Parse.com to be completed before it assumes that the deployment has failed and exits.
+
+## Removal & Updates
+
+### Disable
+
+Remove `hexo-deployer-parse` from `plugins` in `_config.yml`.
+
+``` yaml
+plugins:
+- hexo-deployer-parse
+```
+
+### Update
+
+Execute the following command.
+
+```
+npm update
+```
+
+### Uninstall
+
+Execute the following npm command. (Don't forget to disable the plugin by removing it from your `_config.yml` file's plugin list in addition to uninstalling the npm package, otherwise Hexo will yell at you...)
+
+```
+npm uninstall hexo-deployer-parse
+```
 
 
 [Hexo]: http://hexo.io

@@ -1,6 +1,6 @@
 {
   "name": "hexo-deploy-parse",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Parse.com deployer plugin for the Hexo blog platform",
   "main": "main.js",
   "scripts": {
