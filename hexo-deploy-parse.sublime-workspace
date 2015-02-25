@@ -1,0 +1,870 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backg",
+				"background"
+			],
+			[
+				"mainViewCo",
+				"mainViewControllerFileToCopy"
+			],
+			[
+				"MEDIA_",
+				"MEDIA_NONE"
+			],
+			[
+				"back",
+				"background-position"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 4017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 1304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/settings-manager.js",
+			"settings":
+			{
+				"buffer_size": 2452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/timekeeper.js",
+			"settings":
+			{
+				"buffer_size": 862,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/deployer.js",
+			"settings":
+			{
+				"buffer_size": 731,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/browser.js",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/builder.js",
+			"settings":
+			{
+				"buffer_size": 623,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/smoketester.js",
+			"settings":
+			{
+				"buffer_size": 2562,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/logger.js",
+			"settings":
+			{
+				"buffer_size": 455,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"Markdown P",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Mard",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Markdown",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"Install PAck",
+				"Package Control: Install Package"
+			],
+			[
+				"Install PAckage",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install PAck	",
+				"Package Control: Install Package"
+			],
+			[
+				"Install P",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Install PAc",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mflinn/Code/hexo-deploy-parse",
+		"/Users/mflinn/Code/hexo-deploy-parse/src"
+	],
+	"file_history":
+	[
+		"/Users/mflinn/Code/hexo-deploy-parse/README.md",
+		"/Users/mflinn/Code/hexo-deploy-parse/package.json",
+		"/Users/mflinn/.npmrc",
+		"/Users/mflinn/.bash_profile",
+		"/Users/mflinn/Code/whoisflinn/package.json",
+		"/Users/mflinn/Code/hexo-deploy-parse/.gitignore",
+		"/Users/mflinn/Code/hexo-deploy-parse/hexo-deploy-parse.sublime-project",
+		"/Users/mflinn/Code/hexo-deploy-parse/.npmignore",
+		"/Users/mflinn/Code/hexo-deploy-parse/LICENSE",
+		"/Users/mflinn/Code/whoisflinn/.gitignore",
+		"/Users/mflinn/Code/whoisflinn/whoisflinn.sublime-project",
+		"/Users/mflinn/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/mflinn/Code/whoisflinn/test/urls.json",
+		"/Users/mflinn/Code/whoisflinn/test/smoketests.js",
+		"/Users/mflinn/Code/whoisflinn/test.js",
+		"/Users/mflinn/Code/whoisflinn/themes/flinn/layout/_partial/main-body-header.ejs",
+		"/Users/mflinn/Code/whoisflinn/themes/flinn/source/css/_partial/sidebar.styl",
+		"/Users/mflinn/Code/whoisflinn/themes/flinn/layout/_widget/recent_posts.ejs",
+		"/Users/mflinn/Code/hexo-theme-flinn/source/css/_collapser.styl",
+		"/Users/mflinn/Code/hexo-theme-flinn/source/css/_variables.styl",
+		"/Users/mflinn/Code/hexo-theme-flinn/source/css/style.styl",
+		"/Users/mflinn/Code/lobster/lobby.welcome/module/welcome-controller.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/content/explore.html",
+		"/Users/mflinn/Code/lobster/lobby.directives/module/ga.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/help.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/settings.html",
+		"/Users/mflinn/Code/lobster/lobby.welcome/module/tour-controller.js",
+		"/Users/mflinn/Code/mobile-one/device/www/main.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/login.html",
+		"/Users/mflinn/Code/lobster/lobby.services/module/google-analytics-service.js",
+		"/Users/mflinn/Code/lobster/lobby.services/module/member-service.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/system/feedback-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/audio-controller.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/trades/trade-inbox.html",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/explore-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/library-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/video-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/player-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.directives/module/index.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/content/video.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/content/library.html",
+		"/Users/mflinn/Code/mobile-one/server/public/index.html",
+		"/Users/mflinn/Code/lobster/lobby.content/module/services/media-service.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/system/app-controller.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/feedback.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/trades/trade.html",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/trades/trade-controller.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/libs/tradeAlert.js",
+		"/Users/mflinn/Code/mobile-one/device/src/config/ionic-config-provider.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/services/reader-service.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/database/content-cache.js",
+		"/Users/mflinn/Code/mobile-one/device/scss/fool/_trade-inbox.scss",
+		"/Users/mflinn/Code/lobster/push.sh",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/content/audio.html",
+		"/Users/mflinn/Code/lobster/lobby.storage/module/local-storage.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/services/trade-service.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/index.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/trades/trade-inbox-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/mediaplayers/streamed-media-player.js",
+		"/Users/mflinn/Code/mobile-one/device/scss/fool/_content.scss",
+		"/Users/mflinn/Code/mobile-one/device/src/run/user-action-prompter.js",
+		"/Users/mflinn/Code/mobile-one/device/src/run/version-increment.js",
+		"/Users/mflinn/Code/mobile-one/device/src/run/initialization.js",
+		"/Users/mflinn/Code/mobile-one/device/src/run/state-change-success.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/system/settings-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.services/module/index.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/jobs/mediaImport.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/libs/media.js",
+		"/Users/mflinn/Code/mobile-one/device/www/lib/ionic/scss/_variables.scss",
+		"/Users/mflinn/Code/mobile-one/device/www/lib/ionic/scss/_range.scss",
+		"/Users/mflinn/Code/mobile-one/device/src/config/index.js",
+		"/Users/mflinn/Code/mobile-one/device/src/config/raven-provider.js",
+		"/Users/mflinn/Code/lobster/lobby.services/module/device-settings-service.js",
+		"/Users/mflinn/Code/mobile-one/notes/intro_sound_fx_code.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/database/local-db.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/menu.html",
+		"/Users/mflinn/Code/lobster/lobby.routes/module/states/content/explore.js",
+		"/Users/mflinn/Code/lobster/lobby.routes/module/states/system/feedback.js",
+		"/Users/mflinn/Code/lobster/lobby.storage/module/index.js",
+		"/Users/mflinn/Code/lobster/lobby.content/module/database/session-db.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/content/mediaplayers/faked-media-player.js",
+		"/Users/mflinn/.gemrc",
+		"/Users/mflinn/Code/mobile-one/server/cloud/api/tradeAlert.js",
+		"/Users/mflinn/Code/lobster/lobby.storage/module/session-storage.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/jobs/_shared.js",
+		"/Users/mflinn/Desktop/test.html",
+		"/Users/mflinn/Code/mobile-one/device/www/lib/hammer/hammer.min.js",
+		"/Users/mflinn/Code/mobile-one/device/www/lib/ionic/js/ionic-angular.js",
+		"/Users/mflinn/Code/mobile-one/device/www/lib/ionic/js/ionic.bundle.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/api/media.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/libs/_internal.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/system/login-controller.js",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/system/developer-controller.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/api/content.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/developer.html",
+		"/Users/mflinn/Code/lobster/lobby.controllers/module/index.js",
+		"/Users/mflinn/Code/mobile-one/device/gruntfile.js",
+		"/Users/mflinn/Code/mobile-one/device/package.json",
+		"/Users/mflinn/Code/mobile-one/device/platforms/android/res/xml/config.xml",
+		"/Users/mflinn/Code/mobile-one/device/www/config.xml",
+		"/Users/mflinn/Code/mobile-one/device/config.xml",
+		"/Users/mflinn/Code/mobile-one/README.md",
+		"/Users/mflinn/Code/mobile-one/device/hooks/after_platform_add/replace_plist_and_viewcontroller.js",
+		"/Users/mflinn/Code/mobile-one/device/hooks/after_platform_add/files/MainViewController.m",
+		"/Users/mflinn/Code/mobile-one/device/hooks/after_platform_add/files/Fool One-Info.plist",
+		"/Users/mflinn/Code/mobile-one/device/hooks/before_build/rebuild_js_and_sass.js",
+		"/Users/mflinn/Code/mobile-one/device/hooks/after_build/after_build.js",
+		"/Users/mflinn/Code/mobile-one/device/hooks/before_build/resource_files.js",
+		"/Users/mflinn/Code/mobile-one/device/gulpfile.js",
+		"/Users/mflinn/Code/lobster/lobby.routes/module/router.js",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/welcome/member-welcome.html",
+		"/Users/mflinn/Code/lobster/lobby.services/module/user-service.js",
+		"/Users/mflinn/Code/lobster/lobby.services/module/init-service.js",
+		"/Users/mflinn/Code/mobile-one/device/src/run/index.js",
+		"/Users/mflinn/Code/lobster/lobby.services/module/cleanup-service.js",
+		"/Users/mflinn/Code/mobile-one/server/cloud/api/_auth.js",
+		"/Users/mflinn/Code/mobile-one/device/scss/fool/_teaser.scss",
+		"/Users/mflinn/Code/lobster/trashcan/raves.txt",
+		"/Users/mflinn/Code/lobster/trashcan/trades.json",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/scorecards/everlasting.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/system/navigation.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/holdings.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/allaccess.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/community.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/videovault.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/rules.html",
+		"/Users/mflinn/Code/mobile-one/device/www/templates/free/legal.html",
+		"/Users/mflinn/Code/lobster/lobby.routes/module/states/system/abstract.js"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 120.0,
+		"where_history":
+		[
+			"/Users/mflinn/Code/hexo-deploy-parse",
+			"<open files>",
+			"/Users/mflinn/Code/hexo-theme-flinn/source/css",
+			"/Users/mflinn/Code/lobster/lobby.controllers/module/content/video-controller.js",
+			"/Users/mflinn/Code/lobster/lobby.content/module/database/content-cache.js",
+			"/Users/mflinn/Code/mobile-one/device/scss",
+			"/Users/mflinn/Code/mobile-one/server/",
+			"/Users/mflinn/Code",
+			"/Users/mflinn/Code/lobster/lobby.controllers/module/trades/",
+			"/Users/mflinn/Code/mobile-one/device/scss/fool",
+			"/Users/mflinn/Code/lobster/lobby.controllers",
+			"/Users/mflinn/Code/mobile-one/server",
+			"/Users/mflinn/Code/mobile-one/device/scss",
+			"/Users/mflinn/Code/lobster/lobby.controllers",
+			"/Users/mflinn/Code/lobster/lobby.controllers/module",
+			"/Users/mflinn/Code/mobile-one/device/scss/fool",
+			"/Users/mflinn/Code/mobile-one/device/scss",
+			"/Users/mflinn/Code/lobster",
+			"/Users/mflinn/Code/lobster/lobby.controllers/module",
+			"/Users/mflinn/Code/mobile-one/device",
+			"/Users/mflinn/Code/lobster",
+			"/Users/mflinn/Code/mobile-one/device/scss/fool",
+			"/Users/mflinn/Code/mobile-one/device/scss",
+			"/Users/mflinn/Code/mobile-one/device/scss/fool"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"plugin",
+			"toISOString",
+			"statusCo",
+			"Deployment failed",
+			"logger.log(",
+			"isNode",
+			"useMasterKey",
+			"resizehandleStickyMenu",
+			"stickyMenu",
+			"sidemenu",
+			"sidebar",
+			"#main-nav",
+			"thumb",
+			"blockquote",
+			".article-entry blockquote",
+			".collapsed",
+			"stuck",
+			"TOGGLE",
+			"uncollaps",
+			"player.play",
+			".then",
+			"play(",
+			"scope.play",
+			".fail",
+			"see",
+			"restart",
+			"seekTo",
+			"statusC",
+			"restart",
+			"setTimer",
+			"seekTo",
+			"currentTime",
+			"seekTo(",
+			"seekTo",
+			"pause",
+			"player.seekTo",
+			"delete",
+			"seekTo",
+			"seekT",
+			"currentPos",
+			"seekTo",
+			"set",
+			"seekT",
+			"ga",
+			"seekTo",
+			"startDownloadingMedia",
+			"loadMedia",
+			"rewind(",
+			"isDownloading",
+			"transferCb",
+			"startDownloadingMedia",
+			"loadMedia",
+			"pause",
+			"isLoading",
+			"showPlayOr",
+			"scope.isPlaying",
+			"play",
+			"playPause(",
+			"assemble",
+			"delay",
+			"assembleUser",
+			"toggleVideo",
+			"videoStatus",
+			"videoPlaying",
+			"play event",
+			"paused",
+			"play event",
+			"showPlayOrPause",
+			"videoPlaying",
+			"videoStatus",
+			"paused'",
+			"bind",
+			"showPlayOr",
+			"videoPlaying",
+			"scope.videoPlay",
+			"bind",
+			"playP",
+			"playPause(",
+			"playPause",
+			"showPlayButton",
+			"play(",
+			"bindWis",
+			"playBtn",
+			"showPlayButton",
+			"showPauseButton",
+			"updatePlayButton",
+			"updatePauseButton",
+			"playPauseBtn",
+			"updatePlayButton",
+			"bindWistia",
+			"updatePause",
+			"delete",
+			"update(",
+			"ionicSlideBoxDelegate",
+			"localDb",
+			"seek",
+			"setTimerDisplay",
+			"seek",
+			"pause(",
+			"seekTo",
+			"seek",
+			"seekTo(",
+			"audio-position",
+			"bindTimerData",
+			"broadcastTimerData(",
+			"audioPosition",
+			"broadcastTi",
+			"bind",
+			"media.au",
+			"showDefault",
+			"setTimersToDefault",
+			"showSavedTimerDataIfPossible",
+			"setTimersToDefaul	",
+			"bindTimerData",
+			"statusCB",
+			"rootScope ",
+			"setTimerDisplay(",
+			"setTimerDisplay",
+			"initAudioStream",
+			"setTimerDi",
+			"*/",
+			"$rootScope.audio_uuid",
+			"initAudioStrea",
+			"setTimerDisplay(",
+			"seekTO(",
+			"play(",
+			"saveCurrentTime",
+			"setTimerDisplay("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"resizeStickyMenu",
+			"handleStickyMenu",
+			"sideMenu",
+			"showPlayButton",
+			"showPauseButton",
+			"sessionDb",
+			"reader",
+			"\"",
+			"",
+			".genre",
+			"DownloadedMedia",
+			"FakedMedia"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1910,
+								1916
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2605.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/settings-manager.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1185,
+								1185
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/timekeeper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/deployer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/browser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								86
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/builder.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/smoketester.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								178
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/logger.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mde":
+	{
+		"height": 208.0
+	},
+	"project": "hexo-deploy-parse.sublime-project",
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 494.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

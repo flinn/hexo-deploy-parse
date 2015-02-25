@@ -1,0 +1,37 @@
+{
+  "name": "hexo-deploy-parse",
+  "version": "0.2.0",
+  "description": "Parse.com deployer plugin for the Hexo blog platform",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flinn/hexo-deploy-parse.git"
+  },
+  "keywords": [
+    "parse.com",
+    "parse",
+    "deploy",
+    "deployer",
+    "hexo"
+  ],
+  "author": "mflinn@fool.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flinn/hexo-deploy-parse/issues"
+  },
+  "homepage": "https://github.com/flinn/hexo-deploy-parse",
+  "dependencies": {
+    "jsonfile": "^2.0.0",
+    "moment": "^2.9.0",
+    "nconf": "^0.7.1",
+    "path": "^0.11.14",
+    "q": "^1.1.2",
+    "request": "^2.53.0",
+    "underscore": "^1.8.2",
+    "url": "^0.10.2",
+    "versiony": "^1.3.0"
+  }
+}
