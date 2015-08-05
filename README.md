@@ -1,4 +1,4 @@
-# Parse.com deployer plugin for [Hexo](http://hexo.io/)
+# Parse.com Deployment Plugin for [Hexo](http://hexo.io/)
 
 With this plugin you can deploy your Hexo site be hosted on Parse.com, execute smoketests on your pages/blogposts, increment the values of "settings" objects stored on Parse, and easily extend your build/deployment/rollback process.
 
@@ -9,16 +9,16 @@ With this plugin you can deploy your Hexo site be hosted on Parse.com, execute s
 ### Install
 
 ```
-npm install hexo-deployer-parse --save
+npm install hexo-deploy-parse --save
 ```
 
 ### Enable
 
-Add `hexo-deployer-parse` to `plugins` in `_config.yml`.
+Add `hexo-deploy-parse` to `plugins` in `_config.yml`.
 
 ``` yaml
 plugins:
-- hexo-deployer-parse
+- hexo-deploy-parse
 ```
 
 ## Configuration
@@ -71,7 +71,7 @@ As you can see above, there are also a couple other options included in the pars
 
 **object**: This is the name of the Parse.com "Object" in which you want your app's deployment settings object stored. This allows your server side code to be aware of the last time it was successfully deployed to and allows you to track the version of your site based on how many times you have deployed it.
 
-**settings_file**: This is the relative path to the local file where deployment settings will be updated/stored. (**NOTE**: This file will need to be created initially by you! Sorry, I'm lazy.)
+**settings_file**: This is the relative path to the local file where deployment settings will be updated/stored. (**NOTE**: This file will need to be created initially by you! Sorry for being lazy...)
 
 You should create a file at this path that looks like this to start...
 
@@ -80,7 +80,7 @@ You should create a file at this path that looks like this to start...
   "name": "",
   "version": 0,
   "last_deployed": ""
-}  
+}
 ```
 
 These values will be updated for you automatically upon each deployment.
@@ -99,7 +99,7 @@ deploy
     rollback_cmd: hexo rollback
 ```
 
-These options tell the deployer which (relative) URLs to check after your deployment has completed to ensure that your pages still work. This just pings each and ensures that an HTTP status code of 200 is returned. 
+These options tell the deployer which (relative) URLs to check after your deployment has completed to ensure that your pages still work. This just pings each and ensures that an HTTP status code of 200 is returned.
 
 If you have set `check_posts` to `true`, the deployer will also trigger a custom hexo "generator" that creates a file called `list.json` in the `public/deployer/posts/` folder of your project that will contain a list of all your posts including their `title` and `permalink` attributes. It will test all of your post's URLs to ensure that they have an HTTP status code of 200 as well.
 
@@ -121,11 +121,11 @@ This is the amount of time, in seconds, that the deployer will wait for the depl
 
 ### Disable
 
-Remove `hexo-deployer-parse` from `plugins` in `_config.yml`.
+Remove `hexo-deploy-parse` from `plugins` in `_config.yml`.
 
 ``` yaml
 plugins:
-- hexo-deployer-parse
+- hexo-deploy-parse
 ```
 
 ### Update
@@ -141,7 +141,7 @@ npm update
 Execute the following npm command. (Don't forget to disable the plugin by removing it from your `_config.yml` file's plugin list in addition to uninstalling the npm package, otherwise Hexo will yell at you...)
 
 ```
-npm uninstall hexo-deployer-parse
+npm uninstall hexo-deploy-parse
 ```
 
 

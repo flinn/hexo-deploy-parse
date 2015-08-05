@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/mflinn/Code/hexo-deploy-parse',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package.tgz',
+10 verbose tar pack   '/Users/mflinn/Code/hexo-deploy-parse' ]
+11 verbose tarball /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package.tgz
+12 verbose folder /Users/mflinn/Code/hexo-deploy-parse
+13 info prepublish hexo-deploy-parse@0.2.1
+14 verbose addLocalTarball adding from inside cache /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package.tgz
+15 silly cache afterAdd hexo-deploy-parse@0.2.1
+16 verbose afterAdd /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package/package.json written
+18 silly publish { name: 'hexo-deploy-parse',
+18 silly publish   version: '0.2.1',
+18 silly publish   description: 'Parse.com deployer plugin for the Hexo blog platform',
+18 silly publish   main: 'main.js',
+18 silly publish   scripts: { test: 'npm test' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/flinn/hexo-deploy-parse.git' },
+18 silly publish   keywords: [ 'parse.com', 'parse', 'deploy', 'deployer', 'hexo' ],
+18 silly publish   author: { name: 'mflinn@fool.com' },
+18 silly publish   license: 'MIT',
+18 silly publish   bugs: { url: 'https://github.com/flinn/hexo-deploy-parse/issues' },
+18 silly publish   homepage: 'https://github.com/flinn/hexo-deploy-parse',
+18 silly publish   dependencies:
+18 silly publish    { jsonfile: '^2.0.0',
+18 silly publish      moment: '^2.9.0',
+18 silly publish      nconf: '^0.7.1',
+18 silly publish      path: '^0.11.14',
+18 silly publish      q: '^1.1.2',
+18 silly publish      request: '^2.53.0',
+18 silly publish      underscore: '^1.8.2',
+18 silly publish      url: '^0.10.2',
+18 silly publish      versiony: '^1.3.0' },
+18 silly publish   readme: '# Parse.com deployer plugin for [Hexo](http://hexo.io/)\n\nWith this plugin you can deploy your Hexo site be hosted on Parse.com, execute smoketests on your pages/blogposts, increment the values of "settings" objects stored on Parse, and easily extend your build/deployment/rollback process.\n\n**WARNING**: This plugin is only half-baked in many ways. If others show interest, I will contribute more features and fix any issues.\n\n## Usage\n\n### Install\n\n```\nnpm install hexo-deployer-parse --save\n```\n\n### Enable\n\nAdd `hexo-deployer-parse` to `plugins` in `_config.yml`.\n\n``` yaml\nplugins:\n- hexo-deployer-parse\n```\n\n## Configuration\n\nThis explains how to configure your deployment options.\n\n### Quickstart\n\nTo get your started quickly, a **simple** build configuration in your "_config.yml" file might look something like this...\n\n```\ndeploy:\n  type: parse\n  included_folders: [\'assets/img:public/img\']\n  deployment_timeout: 60\n  load_in_browser: true  \n```\n\nThe configuration above would ensure that:\n- The `assets/img` folder will be copied over to `public/img` before your deployment to Parse.com begins.\n- The deployment will throw an error and exit if it does not **complete** in less than 60 seconds. This timeout should include time for generating a build, deploying that build to parse, running all URL tests, and the entire deployment process.\n- After deployment completes your site will be loaded in a new window by your default web browser because `load_in_browser` is set to `true`.\n\n### Parse Settings\n\n**NOTE: This feature hasn\'t been completed as of 2/25/15. The local `settings.json` file *will* be updated when you deploy, but your settings object on Parse.com will not be updated. I\'ll get to this feature soon and update the package when I do.**\n\nIf you\'d like to have the deployer increment settings values locally and on Parse.com as part of your deployment process, the plugin will need access to your Parse.com App\'s `Application ID` and `JavaScript Key`. \n\nAdd these keys to your `_config.yml` file in the deploy settings under the "parse" property as `app_id` and `js_key` respectively.\n\n```\ndeploy:\n  type: parse\n  included_folders: [\'assets/img:public/img\', \'src/cloud_code:cloud\']\n  load_in_browser: true\n  deployment_timeout: 60\n  parse: \n    app_id: <Your Parse.com App\'s ID>\n    js_key: <Your Parse.com App\'s JavaScript Key>    \n    object: appSettings\n    settings_file: config/settings.json\n  url_tests:\n    urls: [\'/home\', \'/about\', \'/contact\']\n    check_posts: true\n    rollback_cmd: hexo rollback  \n```\n\nAs you can see above, there are also a couple other options included in the parse settings within the "_config.yml" file like `object` and `settings_file`.\n\n**object**: This is the name of the Parse.com "Object" in which you want your app\'s deployment settings object stored. This allows your server side code to be aware of the last time it was successfully deployed to and allows you to track the version of your site based on how many times you have deployed it.\n\n**settings_file**: This is the relative path to the local file where deployment settings will be updated/stored. (**NOTE**: This file will need to be created initially by you! Sorry, I\'m lazy.)\n\nYou should create a file at this path that looks like this to start...\n\n```\n{\n  "name": "",\n  "version": 0,\n  "last_deployed": ""\n}  \n```\n\nThese values will be updated for you automatically upon each deployment.\n\n### URL Tests\n\nIf you\'d like for the deployer to check the status of your pages after deployment, include these options in your `_config.yml` file...\n\n```\ndeploy\n  type: parse\n  deployment_timeout: 70\n  url_tests:\n    urls: [\'blog/\', \'about/\', \'projects/\', \'contact/\',]\n    check_posts: true\n    rollback_cmd: hexo rollback\n```\n\nThese options tell the deployer which (relative) URLs to check after your deployment has completed to ensure that your pages still work. This just pings each and ensures that an HTTP status code of 200 is returned. \n\nIf you have set `check_posts` to `true`, the deployer will also trigger a custom hexo "generator" that creates a file called `list.json` in the `public/deployer/posts/` folder of your project that will contain a list of all your posts including their `title` and `permalink` attributes. It will test all of your post\'s URLs to ensure that they have an HTTP status code of 200 as well.\n\nIf you\'ve set a `rollback_cmd`, this command will be run in the event that any of your URL tests fail. I suggest creating a custom script that will roll your site back to the previous (and hopefully working) version.\n\n### Included Folders\n\nThis is where you specify the folders that you\'d like to have included in your deployment to Parse. The syntax for including folders is to add the source and destination paths, seperated by a colon (:), to an array like this: `[\'<path_to_source_folder>:<path_to_destination_folder>\', etc, etc...]`\n\n### Browser Load\n\nThis can be `true`, `false`, or a URL like `http://your-app-name.parseapp.com`. This tells the deployer to open your browser and navigate to either your hexo configuration\'s root URL or to the URL that you specify once deployment is complete. Set this value to `false` if you\'d prefer that it didn\'t open your browser for you.\n\n### Deployment Timeout\n\nThis is the amount of time, in seconds, that the deployer will wait for the deployment to Parse.com to be completed before it assumes that the deployment has failed and exits.\n\n## Removal & Updates\n\n### Disable\n\nRemove `hexo-deployer-parse` from `plugins` in `_config.yml`.\n\n``` yaml\nplugins:\n- hexo-deployer-parse\n```\n\n### Update\n\nExecute the following command.\n\n```\nnpm update\n```\n\n### Uninstall\n\nExecute the following npm command. (Don\'t forget to disable the plugin by removing it from your `_config.yml` file\'s plugin list in addition to uninstalling the npm package, otherwise Hexo will yell at you...)\n\n```\nnpm uninstall hexo-deployer-parse\n```\n\n\n[Hexo]: http://hexo.io',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'baefe483be92b4657644ed53c4e73047baf5321e',
+18 silly publish   _id: 'hexo-deploy-parse@0.2.1',
+18 silly publish   _shasum: 'd4b62d31d551cb22fd74b2df3af88ae99f21d7ef',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name hexo-deploy-parse
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/hexo-deploy-parse
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/mflinn/.npm/hexo-deploy-parse/0.2.1/package.tgz
+25 verbose request uri https://registry.npmjs.org/hexo-deploy-parse
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 03:05:29
+28 verbose request id 56c742a0b3c5aac8
+29 http request PUT https://registry.npmjs.org/hexo-deploy-parse
+30 http 403 https://registry.npmjs.org/hexo-deploy-parse
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Wed, 05 Aug 2015 07:05:30 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-atl6233-ATL',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1438758329.794595,VS0,VE776' }
+32 verbose request invalidating /Users/mflinn/.npm/registry.npmjs.org/hexo-deploy-parse on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 0.2.1." : hexo-deploy-parse
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid hexo-deploy-parse
+37 verbose cwd /Users/mflinn/Code/hexo-deploy-parse
+38 error Darwin 14.3.0
+39 error argv "node" "/usr/local/bin/npm" "publish"
+40 error node v0.12.0
+41 error npm  v2.5.1
+42 error code E403
+43 error "You cannot publish over the previously published version 0.2.1." : hexo-deploy-parse
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
